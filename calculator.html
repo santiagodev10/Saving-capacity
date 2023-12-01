@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings capacity</title>
+    <link rel="stylesheet" href="./calculator-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Open+Sans&family=Outfit&family=Poppins:ital,wght@0,700;1,400;1,800&family=Quicksand:wght@300;500;700&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="statement-container">
+        <h1>Saving capacity calculator</h1>
+        <p>The saving capacity it's about the posibility of a person to separate a part of his incomes and saving money for the future, that implied that you have more incomes than bills to pay</p>
+    </header>
+    <main id="main-container">
+        <div id="calculator-container">
+            <form action="/" id="form-container">
+                <span class="description">As a suggestion, the experts on personal finances recommend that at minimum you should saving a 20% of your income, and a maximum of 35%</span>
+                <label for="" class="short-description">Enter a % of saving</label>
+                <input type="number" class="inputs input-percentage" max="100">
+
+                <span class="description especific-details">Choose in what period of time you want to save money</span>
+                <label for="" class="short-description">Enter a period of time</label>
+                <select id="time" class="inputs input-time">
+                    <option value="daily" class="daily">daily</option>
+                    <option value="weekly" class="weekly">weekly</option>
+                    <option value="monthly" class="monthly">monthly</option>
+                    <option value="yearly" class="yearly">yearly</option>
+                </select>
+
+                <span class="description especific-details">Put your income right here based on the period of time you choose</span>
+                <label for="" class="short-description">Enter your income</label>
+                <input type="number" class="inputs input-income">
+
+                <input type="submit" class="submit-button" value="Result">
+            </form>
+            <section class="show-result">
+                <div class="result-container">
+                    <p class="text-result"></p>
+                    <button class="reset-button">Reset</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="./calculator.js"></script>
+</body>
+</html>
